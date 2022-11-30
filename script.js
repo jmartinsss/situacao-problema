@@ -11,10 +11,12 @@
 //Definir as possíveis opções de tipos de entrada!
     if (tipoEntrada1 = "compra") {
         let compra = prompt('Qual a quantidade?')
-        console.log(compra);
+        let result1 = "Quantidade:" + " " + compra;
+        console.log(result1);
     }
     else if(tipoEntrada1= "venda") {
         let venda = prompt('Qual a quantidade?')
-        console.log(venda);
+        let result2 = "Quantidade:" + " " + venda;
+        console.log(result2);
     }
 
