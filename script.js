@@ -21,5 +21,6 @@
     };
 //Definir os calculos de cada tipo de entrada
 if (venda < saldoInicial) {
-    alert('Saldo Insuficiente');
+    let venda = venda;
+    let saldoInicial = saldoInicial;
 }
