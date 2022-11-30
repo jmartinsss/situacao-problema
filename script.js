@@ -18,5 +18,8 @@
         let venda = prompt('Qual a quantidade?')
         let result2 = "Quantidade:" + " " + venda;
         console.log(result2);
-    }
-
+    };
+//Definir os calculos de cada tipo de entrada
+if (venda < saldoInicial) {
+    alert('Saldo Insuficiente');
+}
