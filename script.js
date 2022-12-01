@@ -10,6 +10,17 @@
     alert(resultado1);
 //Definir as possíveis opções de tipos de entrada!
     if (tipoEntrada1 = "compra") {
-        let tipoEntrada1 = prompt('Qual a quantidade?')
+        let compra = prompt('Qual a quantidade?')
+        let result1 = "Quantidade:" + " " + compra;
+        console.log(result1);
     }
-
+    else if(tipoEntrada1= "venda") {
+        let venda = prompt('Qual a quantidade?')
+        let result2 = "Quantidade:" + " " + venda;
+        console.log(result2);
+    };
+//Definir os calculos de cada tipo de entrada
+if (venda < saldoInicial) {
+    let venda = venda;
+    let saldoInicial = saldoInicial;
+}
