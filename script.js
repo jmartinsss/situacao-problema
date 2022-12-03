@@ -20,8 +20,8 @@
     };
     let venda = tipoQuantidade
     if (saldoInicial <= venda){
-        alertaVenda = "Total atualizado:" + " "
-        console.log(alertaVenda,(parseInt(tipoQuantidade) - parseInt(saldoInicial)))
+        venda = parseInt(tipoQuantidade) - parseInt(saldoInicial)
+        console.log('Total atualizado: ${venda}');
     }
     else if (venda > saldoInicial) {
         alert('Saldo Insuficiente!')
