@@ -1,28 +1,32 @@
-//Todo inicio de sistema o mesmo deve pedir o saldo inicial da peça!
-    let saldoInicial = prompt('Qual o saldo inicial?');
-    let resultado = "Saldo Inicial:" + " " + saldoInicial;
-    console.log(resultado);
-//Definir o tipo de entrada + quantidade
-//tipo 1: compra (saldo inicial + quantidade)
-//tipo 2: venda (saldo inicial - quantidade)...
-//Definir as possíveis opções de tipos de entrada!
-    let tipoEntrada1 = prompt('Qual o tipo de entrada?')
-        tipoEntrada1 = 'compra','venda'
-//Definir a quantidade das entradas!
-    let tipoQuantidade = prompt('Qual a quantidade?')
-        result1 = "Quantidade:" + " " + tipoQuantidade;
-        console.log(result1);
-//Definir os calculos de cada tipo de entrada
-    let compra = tipoQuantidade
-    while(compra + saldoInicial) {
-        alertaCompra = "Total atualizado:" + " "
-        console.log(alertaCompra,(parseInt(tipoQuantidade) + parseInt(saldoInicial)))
-    };
-    let venda = tipoQuantidade
-    if (saldoInicial <= venda){
-        venda = parseInt(tipoQuantidade) - parseInt(saldoInicial)
-        console.log('Total atualizado: ${venda}');
-    }
-    else if (venda > saldoInicial) {
-        alert('Saldo Insuficiente!')
-    };
+
+
+
+function tipoEntrada(){
+      let text;
+      //Todo inicio de sistema o mesmo deve pedir o saldo inicial da peça!
+      let saldoInicial = prompt('Qual o saldo inicial?');
+      console.log(`Saldo Inicial: ${saldoInicial}`);
+      //Definir o tipo de entrada
+      //Definir as possíveis opções de tipos de entrada!
+      let venda = "venda"
+      let compra = "compra"
+      let tipoEntrada = prompt("Qual o tipo de entrada?",venda,compra);
+      console.log(`Tipo de Entrada: ${tipoEntrada}`);
+      //Definir a quantidade da entrada!
+      let Quantidade = prompt('Qual a quantidade?');
+      console.log(`Quantidade: ${Quantidade}`);
+if(tipoEntrada<saldoInicial){
+      switch (tipoEntrada) {
+            case venda:
+                  let resultado = parseInt(saldoInicial) - parseInt(Quantidade);
+                text = `Saldo atualizado: ${resultado}`;
+                  break;
+      
+            case compra:
+                  let resultado1 = parseInt(saldoInicial) + parseInt(Quantidade);
+                  text = `Saldo atualizado:` + ' ' + resultado1;
+                  break;
+      }
+}
+      document.getElementById("tipoEntrada").innerHTML = text;
+}
